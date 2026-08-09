@@ -115,6 +115,7 @@ require("helper")
 require("menu_shader")
 require("menu_subtext")
 require("menu_prop")
+require("menu_subtitle")
 require("element_vcs")
 
 init = function()
@@ -132,6 +133,11 @@ init = function()
 	prop_menu_init()
 	mp.register_script_message("prop-menu-event", handle_prop_menu_event)
 	mp.register_script_message("uosc-menu-prop", handle_uosc_menu_prop)
+
+	-- sub: menu_subtitle
+	subtitle_menu_init()
+	mp.register_script_message("subtitle-menu-event", handle_subtitle_menu_event)
+	mp.register_script_message("uosc-menu-subtitle", handle_uosc_menu_subtitle)
 
 	-- sub: vcs
 	vcs_init()
