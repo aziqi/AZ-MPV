@@ -4,6 +4,7 @@
 # But keep the config and basic files
 !/portable_config/
 !/README.MD
+!/README.id.md
 !/MPV.bat
 !/LICENSE.MD
 !/LICENSE.txt
