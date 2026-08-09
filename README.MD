@@ -1,12 +1,12 @@
 # 🎬 AZ-MPV
 
 <p align="center">
-  <b>Pemutar Video Next-Gen Berbasis MPV (Fork dari MPV PLAYKIT) dengan AI Upscaling, Shaders, UI UOSC Modern, dan Subtitle Engine Khusus.</b>
+  <b>Pemutar Video Next-Gen Berbasis MPV (Fork dari mpv_PlayKit) dengan AI Upscaling, Shaders, UI UOSC Modern, dan Subtitle Engine Khusus.</b>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/MPV-0.38+-purple.svg" alt="MPV Version">
-  <img src="https://img.shields.io/badge/Fork--of-mpv__lazy%20%2F%20PlayKit-red.svg" alt="Fork">
+  <img src="https://img.shields.io/badge/Fork--of-mpv__PlayKit-red.svg" alt="Fork">
   <img src="https://img.shields.io/badge/Language-Full%20English%20Translated-brightgreen.svg" alt="Full English Translated">
   <img src="https://img.shields.io/badge/Architecture-x86__64-blue.svg" alt="Architecture">
   <img src="https://img.shields.io/badge/License-GPL--2.0-green.svg" alt="License">
