@@ -1,21 +1,35 @@
-# 🎬 AZ-MPV
+<p align="center">
+  <img src="portable_config/logo.jpg" width="480" alt="AZ-MPV Logo">
+</p>
+
+<h1 align="center">🎬 AZ-MPV</h1>
 
 <p align="center">
   <b>Pemutar Video Next-Gen Berbasis MPV (Fork dari mpv_PlayKit) dengan AI Upscaling, Shaders, UI UOSC Modern, dan Subtitle Engine Khusus.</b>
 </p>
 
 <p align="center">
-  <b>Bahasa Indonesia</b> | <a href="README.MD"><b>English</b></a>
+  <b>🇮🇩 Bahasa Indonesia</b> | <a href="README.MD"><b>🇬🇧 English</b></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/MPV-0.38+-purple.svg" alt="MPV Version">
-  <img src="https://img.shields.io/badge/Fork--of-mpv__PlayKit-red.svg" alt="Fork">
-  <img src="https://img.shields.io/badge/Language-Full%20English%20Translated-brightgreen.svg" alt="Full English Translated">
-  <img src="https://img.shields.io/badge/Architecture-x86__64-blue.svg" alt="Architecture">
-  <img src="https://img.shields.io/badge/License-GPL--2.0-green.svg" alt="License">
-  <img src="https://img.shields.io/badge/Status-Portable-orange.svg" alt="Portable">
+  <img src="https://img.shields.io/badge/MPV-0.38+-purple.svg?style=for-the-badge&logo=mpv" alt="MPV Version">
+  <img src="https://img.shields.io/badge/Fork--of-mpv__PlayKit-red.svg?style=for-the-badge" alt="Fork">
+  <img src="https://img.shields.io/badge/Language-Full%20English%20Translated-brightgreen.svg?style=for-the-badge" alt="Full English Translated">
+  <img src="https://img.shields.io/badge/Architecture-x86__64-blue.svg?style=for-the-badge" alt="Architecture">
+  <img src="https://img.shields.io/badge/Status-Portable-orange.svg?style=for-the-badge" alt="Portable">
 </p>
+
+---
+
+## 📌 Navigasi Cepat
+
+- [🌟 Tentang AZ-MPV](#-tentang-az-mpv)
+- [⚡ Perbandingan MPV Standar vs AZ-MPV](#-perbandingan-mpv-standar-vs-az-mpv)
+- [🚀 Fitur Utama & Keunggulan](#-fitur-utama--keunggulan)
+- [⌨️ Pintasan Tombol & Hotkey](#️-daftar-hotkey--pintasan-tombol)
+- [📥 Cara Instalasi & Penggunaan](#-cara-instalasi--penggunaan)
+- [📄 Lisensi & Kredit](#-lisensi--kredit)
 
 ---
 
@@ -26,6 +40,22 @@
 > 🌐 **Full English Translation:** Proyek asli *mpv_PlayKit* berasal dari komunitas Tiongkok dan menggunakan bahasa Mandarin (Cina) di seluruh menu dan konfigurasinya. Di **AZ-MPV**, seluruh menu antarmuka, file konfigurasi (`mpv.conf`, `input_uosc.conf`), skrip Lua/JS, dan OSD telah **diterjemahkan sepenuhnya ke Bahasa Inggris** (serta dilengkapi dukungan penerjemahan subtitle Bahasa Indonesia) untuk aksesibilitas maksimal.
 
 Diracik khusus dengan perpaduan **AI Frame Interpolation (RIFE)**, **AI Super Resolution (ESRGAN/ARTCNN)**, **Custom Shaders (Anime4K/KrigBilateral)**, serta **UI UOSC Modern**, AZ-MPV siap memberikan pengalaman menonton kelas bioskop tanpa kerumitan konfigurasi.
+
+---
+
+## ⚡ Perbandingan MPV Standar vs AZ-MPV
+
+| Fitur | MPV Standar | 🎬 **AZ-MPV** |
+| :--- | :---: | :---: |
+| **Antarmuka (UI)** | Minimalis / Teks Polos | **UI UOSC Modern dengan Glassmorphism & Control Bar** |
+| **Subtitle Engine** | Font Sistem Standar | **Font Ubuntu Portable + Menu Subtitle Settings Interaktif** |
+| **Pengatur Rasio Gambar** | Manual Konfigurasi | **Tombol Rasio Aspek VLC-Style 1-Klik (16:9, 21:9, 4:3)** |
+| **AI Motion Smoothing** | ❌ Tidak Ada | **✅ RIFE AI 60FPS+ Smooth Motion (NVIDIA TensorRT)** |
+| **AI Super Resolution** | ❌ Tidak Ada | **✅ Model AI ESRGAN, ARTCNN, & ACNET Pre-Configured** |
+| **GPU Shader Suite** | ❌ Manual Setup | **✅ Paket Anime4K, KrigBilateral, & SSimSuperRes Siap Pakai** |
+| **Pemrosesan Audio** | Mentah | **LUFS -16 Loudness Normalization + Vocal Clarity EQ** |
+| **Bahasa Antarmuka** | Standar | **Full English Translated (100% Bebas Bahasa Cina)** |
+| **Instalasi** | Perlu Setup | **100% Portable (Tinggal Ekstrak & Jalankan)** |
 
 ---
 
@@ -94,6 +124,12 @@ Diracik khusus dengan perpaduan **AI Frame Interpolation (RIFE)**, **AI Super Re
 2. Unduh paket `.zip` versi **AZ-MPV** terbaru.
 3. Ekstrak folder zip tersebut di lokasi mana saja (contoh: `C:\AZ-MPV` atau `D:\AZ-MPV`).
 4. Jalankan **`mpv.exe`** atau **`MPV.bat`** untuk langsung mulai menonton!
+
+---
+
+## ⭐ Dukung Proyek Ini
+
+Jika Anda menyukai **AZ-MPV**, beri bintang **🌟 Star** pada repositori ini di GitHub!
 
 ---
 
