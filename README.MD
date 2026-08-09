@@ -1,11 +1,12 @@
 # 🎬 AZ-MPV
 
 <p align="center">
-  <b>Pemutar Video Next-Gen Berbasis MPV dengan AI Upscaling, Shaders, UI UOSC Modern, dan Subtitle Engine Khusus.</b>
+  <b>Pemutar Video Next-Gen Berbasis MPV (Fork dari mpv-lazy / mpv_PlayKit) dengan AI Upscaling, Shaders, UI UOSC Modern, dan Subtitle Engine Khusus.</b>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/MPV-0.38+-purple.svg" alt="MPV Version">
+  <img src="https://img.shields.io/badge/Fork--of-mpv__lazy%20%2F%20PlayKit-red.svg" alt="Fork">
   <img src="https://img.shields.io/badge/Architecture-x86__64-blue.svg" alt="Architecture">
   <img src="https://img.shields.io/badge/License-GPL--2.0-green.svg" alt="License">
   <img src="https://img.shields.io/badge/Status-Portable-orange.svg" alt="Portable">
@@ -15,7 +16,7 @@
 
 ## 🌟 Tentang AZ-MPV
 
-**AZ-MPV** adalah pemutar media desktop tingkat tinggi berbasis MPV Engine yang telah dioptimasi secara mendalam untuk mencapai kualitas visual dan kenyamanan menonton terbaik di Windows. 
+**AZ-MPV** adalah pemutar media desktop tingkat tinggi yang dikembangkan sebagai **fork dan kelanjutan dari [mpv-lazy / mpv_PlayKit](https://github.com/hooke007/mpv_PlayKit)** buatan *hooke007*. Proyek ini telah dioptimasi dan dimodifikasi secara mendalam untuk memberikan kualitas visual terbaik, kemudahan penggunaan, dan fitur terlengkap bagi pengguna Indonesia.
 
 Diracik khusus dengan perpaduan **AI Frame Interpolation (RIFE)**, **AI Super Resolution (ESRGAN/ARTCNN)**, **Custom Shaders (Anime4K/KrigBilateral)**, serta **UI UOSC Modern**, AZ-MPV siap memberikan pengalaman menonton kelas bioskop tanpa kerumitan konfigurasi.
 
@@ -87,7 +88,7 @@ Diracik khusus dengan perpaduan **AI Frame Interpolation (RIFE)**, **AI Super Re
 
 ## 📄 Lisensi & Kredit
 
-- **Pengembang Utama:** [Aziqi](https://github.com/aziqi)
+- **Pengembang:** [Aziqi](https://github.com/aziqi)
+- **Fork / Base Project:** [mpv-lazy / mpv_PlayKit by hooke007](https://github.com/hooke007/mpv_PlayKit)
 - **Mesin Utama:** [MPV Player](https://mpv.io)
 - **UI Engine:** [UOSC](https://github.com/tomaskovacik/uosc)
-- **Basis Konfigurasi:** [mpv_PlayKit by hooke007](https://github.com/hooke007/mpv_PlayKit)
