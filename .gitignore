@@ -1,0 +1,15 @@
+# Ignore everything in the root by default
+/*
+
+# But keep the config and basic files
+!/portable_config/
+!/README.MD
+!/MPV.bat
+!/LICENSE.MD
+!/LICENSE.txt
+!/.gitignore
+
+# Ignore any specific large or debug files inside portable_config just in case
+/portable_config/watch_later/
+*.log
+*.zip
