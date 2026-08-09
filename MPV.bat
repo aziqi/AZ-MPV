@@ -1,5 +1,6 @@
 @echo off
-:: MPV Launcher - always open on the main monitor
+title AZ-MPV
+:: AZ-MPV Launcher - always open on the main monitor
 :: Created by Antigravity to fix multi-monitor window position issue
 cd /d "%~dp0"
 if "%~1"=="" (
