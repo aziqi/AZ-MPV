@@ -1,7 +1,7 @@
 # 🎬 AZ-MPV
 
 <p align="center">
-  <b>Pemutar Video Next-Gen Berbasis MPV (Fork dari mpv-lazy / mpv_PlayKit) dengan AI Upscaling, Shaders, UI UOSC Modern, dan Subtitle Engine Khusus.</b>
+  <b>Pemutar Video Next-Gen Berbasis MPV (Fork dari MPV PLAYKIT) dengan AI Upscaling, Shaders, UI UOSC Modern, dan Subtitle Engine Khusus.</b>
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 ## 🌟 Tentang AZ-MPV
 
-**AZ-MPV** adalah pemutar media desktop tingkat tinggi yang dikembangkan sebagai **fork dan kelanjutan dari [mpv-lazy / mpv_PlayKit](https://github.com/hooke007/mpv_PlayKit)** buatan *hooke007*. 
+**AZ-MPV** adalah pemutar media desktop tingkat tinggi yang dikembangkan sebagai **fork dan kelanjutan dari [MPV PLAYKIT](https://github.com/hooke007/mpv_PlayKit)** buatan *hooke007*. 
 
 > 🌐 **Full English Translation:** Proyek asli *mpv_PlayKit* berasal dari komunitas Tiongkok dan menggunakan bahasa Mandarin (Cina) di seluruh menu dan konfigurasinya. Di **AZ-MPV**, seluruh menu antarmuka, file konfigurasi (`mpv.conf`, `input_uosc.conf`), skrip Lua/JS, dan OSD telah **diterjemahkan sepenuhnya ke Bahasa Inggris** (serta dilengkapi dukungan penerjemahan subtitle Bahasa Indonesia) untuk aksesibilitas maksimal.
 
@@ -96,6 +96,6 @@ Diracik khusus dengan perpaduan **AI Frame Interpolation (RIFE)**, **AI Super Re
 ## 📄 Lisensi & Kredit
 
 - **Pengembang:** [Aziqi](https://github.com/aziqi)
-- **Fork / Base Project:** [mpv-lazy / mpv_PlayKit by hooke007](https://github.com/hooke007/mpv_PlayKit) (Originally in Chinese, fully translated & enhanced)
+- **Fork / Base Project:** [MPV PLAYKIT by hooke007](https://github.com/hooke007/mpv_PlayKit) (Originally in Chinese, fully translated & enhanced)
 - **Mesin Utama:** [MPV Player](https://mpv.io)
 - **UI Engine:** [UOSC](https://github.com/tomaskovacik/uosc)
