@@ -13,9 +13,13 @@
 </p>
 
 <p align="center">
+  <a href="https://drive.google.com/file/d/1QyLVprMEWmaKsBpAuWCUBReWt5Fs2Oic/view?usp=sharing"><img src="https://img.shields.io/badge/Download-AZ--MPV%20(Google%20Drive)-brightgreen.svg?style=for-the-badge&logo=googledrive" alt="Download AZ-MPV"></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/MPV-0.38+-purple.svg?style=for-the-badge&logo=mpv" alt="MPV Version">
   <img src="https://img.shields.io/badge/Fork--of-mpv__PlayKit-red.svg?style=for-the-badge" alt="Fork">
-  <img src="https://img.shields.io/badge/Language-Full%20English%20Translated-brightgreen.svg?style=for-the-badge" alt="Full English Translated">
+  <img src="https://img.shields.io/badge/Language-Full%20English%20Translated-blue.svg?style=for-the-badge" alt="Full English Translated">
   <img src="https://img.shields.io/badge/Architecture-x86__64-blue.svg?style=for-the-badge" alt="Architecture">
   <img src="https://img.shields.io/badge/Status-Portable-orange.svg?style=for-the-badge" alt="Portable">
 </p>
@@ -120,10 +124,9 @@ Diracik khusus dengan perpaduan **AI Frame Interpolation (RIFE)**, **AI Super Re
 
 ## 📥 Cara Instalasi & Penggunaan
 
-1. Buka halaman [**Releases**](https://github.com/aziqi/AZ-MPV/releases).
-2. Unduh paket `.zip` versi **AZ-MPV** terbaru.
-3. Ekstrak folder zip tersebut di lokasi mana saja (contoh: `C:\AZ-MPV` atau `D:\AZ-MPV`).
-4. Jalankan **`mpv.exe`** atau **`MPV.bat`** untuk langsung mulai menonton!
+1. Klik di sini untuk [**Unduh Paket Portable AZ-MPV (Google Drive)**](https://drive.google.com/file/d/1QyLVprMEWmaKsBpAuWCUBReWt5Fs2Oic/view?usp=sharing).
+2. Ekstrak folder `.zip` yang diunduh ke lokasi mana saja (contoh: `C:\AZ-MPV` atau `D:\AZ-MPV`).
+3. Jalankan **`mpv.exe`** atau **`MPV.bat`** untuk langsung mulai menonton!
 
 ---
 

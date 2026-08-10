@@ -13,9 +13,13 @@
 </p>
 
 <p align="center">
+  <a href="https://drive.google.com/file/d/1QyLVprMEWmaKsBpAuWCUBReWt5Fs2Oic/view?usp=sharing"><img src="https://img.shields.io/badge/Download-AZ--MPV%20(Google%20Drive)-brightgreen.svg?style=for-the-badge&logo=googledrive" alt="Download AZ-MPV"></a>
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/MPV-0.38+-purple.svg?style=for-the-badge&logo=mpv" alt="MPV Version">
   <img src="https://img.shields.io/badge/Fork--of-mpv__PlayKit-red.svg?style=for-the-badge" alt="Fork">
-  <img src="https://img.shields.io/badge/Language-Full%20English%20Translated-brightgreen.svg?style=for-the-badge" alt="Full English">
+  <img src="https://img.shields.io/badge/Language-Full%20English%20Translated-blue.svg?style=for-the-badge" alt="Full English">
   <img src="https://img.shields.io/badge/Architecture-x86__64-blue.svg?style=for-the-badge" alt="Architecture">
   <img src="https://img.shields.io/badge/Status-Portable-orange.svg?style=for-the-badge" alt="Portable">
 </p>
@@ -119,10 +123,9 @@ Combining **AI Motion Interpolation (RIFE)**, **AI Super Resolution (ESRGAN/ARTC
 
 ## 📥 Installation & Usage
 
-1. Go to the [**Releases**](https://github.com/aziqi/AZ-MPV/releases) page.
-2. Download the latest **AZ-MPV** `.zip` package.
-3. Extract to any directory (e.g., `C:\AZ-MPV` or `D:\AZ-MPV`).
-4. Run **`mpv.exe`** or **`MPV.bat`** to start watching!
+1. Click here to [**Download AZ-MPV Portable Package (Google Drive)**](https://drive.google.com/file/d/1QyLVprMEWmaKsBpAuWCUBReWt5Fs2Oic/view?usp=sharing).
+2. Extract the downloaded `.zip` package to any folder (e.g., `C:\AZ-MPV` or `D:\AZ-MPV`).
+3. Run **`mpv.exe`** or **`MPV.bat`** to start watching!
 
 ---
 
