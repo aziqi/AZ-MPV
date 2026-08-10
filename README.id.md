@@ -129,6 +129,23 @@ Diracik khusus dengan perpaduan **AI Frame Interpolation (RIFE)**, **AI Super Re
 2. Ekstrak folder `.zip` yang diunduh ke lokasi mana saja (contoh: `C:\AZ-MPV` atau `D:\AZ-MPV`).
 3. Jalankan **`mpv.exe`** atau **`MPV.bat`** untuk langsung mulai menonton!
 
+## ❓ Pertanyaan yang Sering Diajukan (FAQ)
+
+<details>
+<summary><b>Q: Bagaimana cara menjadikan AZ-MPV sebagai pemutar video default di Windows?</b></summary>
+Klik kanan file video apa saja (contoh: <code>.mkv</code> atau <code>.mp4</code>) ➔ Pilih <b>Open with (Buka dengan)</b> ➔ Pilih <b>Choose another app</b> ➔ Cari folder <code>AZ-MPV</code> Anda lalu pilih <code>mpv.exe</code> ➔ Centang <b>Always use this app (Selalu gunakan aplikasi ini)</b>.
+</details>
+
+<details>
+<summary><b>Q: Bagaimana cara membuka Menu Subtitle Settings di UOSC?</b></summary>
+Tekan tombol <code>Ctrl + Alt + S</code> atau klik kanan di mana saja pada layar pemutar untuk membuka menu UOSC, lalu pilih <b>📝 Subtitles ➔ ⚙️ Subtitle Settings</b>.
+</details>
+
+<details>
+<summary><b>Q: Apakah AI Motion Smoothing (RIFE) membutuhkan VGA/GPU NVIDIA?</b></summary>
+Ya, fitur penyesuaian gerak AI RIFE 60FPS+ memanfaatkan NVIDIA TensorRT untuk performa GPU terbaik.
+</details>
+
 ---
 
 ## ⭐ Dukung Proyek Ini
