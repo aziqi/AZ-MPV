@@ -14,6 +14,7 @@
 
 <p align="center">
   <a href="https://drive.google.com/file/d/1QyLVprMEWmaKsBpAuWCUBReWt5Fs2Oic/view?usp=sharing"><img src="https://img.shields.io/badge/Download-AZ--MPV%20(Google%20Drive)-brightgreen.svg?style=for-the-badge&logo=googledrive" alt="Download AZ-MPV"></a>
+  <a href="https://github.com/aziqi/AZ-MPV/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/Release-v1.0.0-blue.svg?style=for-the-badge&logo=github" alt="Latest Release"></a>
 </p>
 
 <p align="center">
