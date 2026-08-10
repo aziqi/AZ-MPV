@@ -9,6 +9,7 @@
 !/LICENSE.MD
 !/LICENSE.txt
 !/.gitignore
+!/.agents/
 
 # Ignore any specific large or debug files inside portable_config just in case
 /portable_config/watch_later/
