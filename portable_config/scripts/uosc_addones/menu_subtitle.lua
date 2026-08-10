@@ -32,14 +32,14 @@ local function build_menu_data()
 		-- Section: Text
 		{ title = "─── Text Style ───", selectable = false, muted = true },
 		{
-			title = "Font Size",
+			title = "📐 Font Size",
 			hint = tostring(math.floor(font_size)),
 			value = "font-size",
 			actions = num_actions,
 			actions_place = "outside",
 		},
 		{
-			title = "Bold Text",
+			title = "🔤 Bold Text",
 			hint = is_bold and "On" or "Off",
 			icon = is_bold and "toggle_on" or "toggle_off",
 			value = "toggle-bold",
@@ -48,28 +48,28 @@ local function build_menu_data()
 		-- Section: Appearance & Position
 		{ title = "─── Layout & Background ───", selectable = false, muted = true },
 		{
-			title = "Background Opacity",
+			title = "🖤 Background Opacity",
 			hint = tostring(opacity) .. "%",
 			value = "opacity",
 			actions = num_actions,
 			actions_place = "outside",
 		},
 		{
-			title = "Vertical Position (Margin Y)",
+			title = "📍 Vertical Position (Margin Y)",
 			hint = tostring(math.floor(margin_y)),
 			value = "margin-y",
 			actions = num_actions,
 			actions_place = "outside",
 		},
 		{
-			title = "Subtitle Delay",
+			title = "⏱️ Subtitle Delay",
 			hint = string.format("%.1fs", delay),
 			value = "delay",
 			actions = num_actions,
 			actions_place = "outside",
 		},
 		{
-			title = "Subtitle Scale",
+			title = "📏 Subtitle Scale",
 			hint = string.format("%.1fx", scale),
 			value = "scale",
 			actions = num_actions,
@@ -78,10 +78,10 @@ local function build_menu_data()
 		-- Section: Reset
 		{ title = "─── Reset ───", selectable = false, muted = true },
 		{
-			title = "Reset to Default Settings",
-			icon = "restart_alt",
+			title = "🔄 Reset to Default Settings",
+			hint = "Reset All",
 			value = "reset-all",
-			bold = true,
+			icon = "restore",
 		},
 	}
 
