@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="portable_config/logo.jpg" width="480" alt="AZ-MPV Logo">
-</p>
-
 <h1 align="center">🎬 AZ-MPV</h1>
 
 <p align="center">
