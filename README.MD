@@ -128,6 +128,23 @@ Combining **AI Motion Interpolation (RIFE)**, **AI Super Resolution (ESRGAN/ARTC
 2. Extract the downloaded `.zip` package to any folder (e.g., `C:\AZ-MPV` or `D:\AZ-MPV`).
 3. Run **`mpv.exe`** or **`MPV.bat`** to start watching!
 
+## ❓ Frequently Asked Questions (FAQ)
+
+<details>
+<summary><b>Q: How do I set AZ-MPV as my default media player in Windows?</b></summary>
+Right-click any video file (e.g. <code>.mkv</code> or <code>.mp4</code>) ➔ Select <b>Open with</b> ➔ Choose <b>Choose another app</b> ➔ Browse to your <code>AZ-MPV</code> folder and select <code>mpv.exe</code> ➔ Check <b>Always use this app</b>.
+</details>
+
+<details>
+<summary><b>Q: How do I open the Subtitle Settings menu in UOSC?</b></summary>
+Press <code>Ctrl + Alt + S</code> or right-click anywhere on the player to open the UOSC menu, then select <b>📝 Subtitles ➔ ⚙️ Subtitle Settings</b>.
+</details>
+
+<details>
+<summary><b>Q: Does RIFE AI Frame Interpolation require an NVIDIA GPU?</b></summary>
+Yes, real-time RIFE motion smoothing utilizes NVIDIA TensorRT for optimal GPU performance.
+</details>
+
 ---
 
 ## ⭐ Support & Feedback
