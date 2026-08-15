@@ -91,24 +91,6 @@ if incompat_check(mpv_ver_curr, min_major, min_minor, min_patch) then
 	return
 end
 
-local uosc_min_major = 5
-local uosc_min_minor = 12
-local uosc_min_patch = 0
-local uosc_ready = false
-local init
-mp.register_script_message("uosc-version", function(version)
-	if uosc_ready then return end
-	if incompat_check(version, uosc_min_major, uosc_min_minor, uosc_min_patch) then
-		msg.warn("uosc version (" .. version .. ") is lower than " .. uosc_min_major .. "." .. uosc_min_minor .. "." .. uosc_min_patch .. ", script terminated.")
-		return
-	end
-	uosc_ready = true
-	init()
-end)
-
--- =============================================================================
--- =============================================================================
-
 script_name = mp.get_script_name()
 
 require("helper")
@@ -119,6 +101,9 @@ require("menu_subtitle")
 require("element_vcs")
 
 init = function()
+	if uosc_ready then return end
+	uosc_ready = true
+
 	-- sub: menu_shader
 	shader_menu_init()
 	mp.register_script_message("shader-menu-event", handle_shader_menu_event)
@@ -143,3 +128,7 @@ init = function()
 	vcs_init()
 	mp.register_script_message("uosc-element-vcs", handle_uosc_element_vcs)
 end
+
+-- Initialize immediately to prevent missed uosc-version messages due to script load order
+init()
+

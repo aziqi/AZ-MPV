@@ -20,6 +20,25 @@ local num_actions = {
 	{ name = "inc", icon = "add",    label = "Increase" },
 }
 
+local function get_back_opacity()
+	local color = mp.get_property("sub-back-color", "#00000000")
+	if type(color) == "string" and color:match("^#%x%x%x%x%x%x%x%x$") then
+		local alpha = tonumber(color:sub(2, 3), 16) or 0
+		return math.floor((alpha / 255) * 100 + 0.5)
+	elseif type(color) == "string" and color:match("^#%x%x%x%x%x%x$") then
+		return 100
+	else
+		return 0
+	end
+end
+
+local function set_back_opacity(percent)
+	local pct = math.max(0, math.min(100, percent))
+	local alpha = math.floor((pct / 100) * 255 + 0.5)
+	local hex = string.format("#%02X000000", alpha)
+	mp.set_property("sub-back-color", hex)
+end
+
 local function build_menu_data()
 	local font_size = mp.get_property_number("sub-font-size", 30)
 	local is_bold = mp.get_property_bool("sub-bold", true)
