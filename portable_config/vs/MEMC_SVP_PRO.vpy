@@ -55,9 +55,10 @@ elif Quality == "ultra" and not Nvof:
     )
     s = core.svp1.Super(clip8, super_param)
     v = core.svp1.Analyse(s["clip"], s["data"], clip, analyse_param)
-    clip = core.svp2.SmoothFps(clip, s["clip"], s["data"], v["clip"], v["data"], smooth_param, src=clip, fps=container_fps)
+    clip = core.svp2.SmoothFps(clip, s["clip"], s["data"], v["clip"], v["data"], smooth_param, fps=container_fps)
 else:
     clip = k7f.SVP_PRO(clip, fps_in=container_fps, fps_num=Fps_Num, fps_den=Fps_Den, abs=Abs, nvof=Nvof, gpu=Gpu)
 
+clip = core.std.AssumeFPS(clip, fpsnum=clip.fps_num, fpsden=clip.fps_den)
 clip.set_output()
 
