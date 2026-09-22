@@ -1,5 +1,5 @@
-### SVPflow Pro 180FPS Frame Interpolation (Hardware NVOF Ultra Mode)
-### Optimized for NVIDIA GeForce RTX (Optical Flow Accelerator) & 180Hz Displays
+### SVPflow Pro 180FPS Frame Interpolation (GPU OpenCL Ultra Mode - Standalone DRM-Free)
+### Optimized for NVIDIA GeForce RTX 4060 & 180Hz Displays (No Watermark / No Red Border)
 ### Docs: https://github.com/hooke007/mpv_PlayKit/wiki/3_K7sfunc
 
 import vapoursynth as vs
@@ -16,13 +16,13 @@ H_Pre   = 1440       # Max source height before processing (1080 / 1440 / 2160)
 Fps_Num = 180        # Target FPS (180 for 180Hz displays, 144 for 144Hz, 60 for 60Hz)
 Fps_Den = 1
 Abs     = True       # True = Absolute target FPS, False = Multiplier (e.g. 2x)
-Nvof    = True       # True = Hardware NVIDIA Optical Flow Accelerator (RTX GPU)
+Nvof    = False      # False = Standalone GPU OpenCL (SVPflow v4.2 DRM-free, no red border)
 Quality = "ultra"    # "ultra" = 2M Algo:23 + Bicubic + Linear Light + Mask 80/30
                      # "standard" = Default k7sfunc 1.5M Algo:13
 Gpu     = 0          # Primary discrete GPU index
 Lk_Fmt  = False      # Lock pixel format to YUV420P8
 
-ret = k7f.FPS_CTRL(clip, fps_in=container_fps, fps_ret=True)
+clip = k7f.FPS_CTRL(clip, fps_in=container_fps, fps_ret=True)
 clip = k7f.FMT_CTRL(clip, h_max=H_Pre, fmt_pix=1 if Lk_Fmt else 0)
 
 if Quality == "ultra" and Nvof:
