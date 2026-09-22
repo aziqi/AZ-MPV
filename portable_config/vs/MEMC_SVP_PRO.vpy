@@ -39,17 +39,17 @@ if Quality == "ultra" and Nvof:
 elif Quality == "ultra" and not Nvof:
     clip, clip8 = k7f.FMT2YUV_SP(clip)
     multi_str = "true" if Abs else "false"
-    super_param = "{pel:2,gpu:1,full:true,scale:{up:2,down:4}}"
+    super_param = "{pel:1,gpu:1,full:true,scale:{up:2,down:4}}"
     analyse_param = (
-        "{vectors:3,block:{w:16,h:16,overlap:2},"
-        "main:{levels:5,search:{type:4,distance:3,sort:true,satd:true,coarse:{width:960,type:4,distance:4,satd:true,trymany:true,bad:{sad:1000,range:0}}},"
-        "penalty:{lambda:3.33,plevel:1.33,lsad:3300,pnew:50,pglobal:50,pzero:100,pnbour:65,prev:0}},"
-        "refine:[{thsad:400,search:{type:4,distance:1,satd:false},penalty:{pnew:50}}]}"
+        "{vectors:3,block:{w:32,h:32,overlap:1},"
+        "main:{levels:5,search:{type:4,distance:3,sort:true,satd:false,coarse:{width:960,type:4,distance:4,satd:true,trymany:false,bad:{sad:1000,range:0}}},"
+        "penalty:{lambda:3.0,plevel:1.3,lsad:8000,pnew:50,pglobal:50,pzero:100,pnbour:65,prev:0}},"
+        "refine:[{thsad:800,search:{type:4,distance:1,satd:false},penalty:{pnew:50}}]}"
     )
     smooth_param = (
         "{rate:{num:%d,den:%d,abs:%s},"
-        "algo:23,block:false,cubic:1,gpuid:%d,linear:true,"
-        "mask:{cover:80,area:30,area_sharp:0.75},"
+        "algo:13,block:false,cubic:1,gpuid:%d,linear:true,"
+        "mask:{cover:40,area:16,area_sharp:0.7},"
         "scene:{mode:3,blend:false,limits:{m1:2400,m2:3601,scene:5002,zero:125,blocks:40},luma:1.5}}"
         % (Fps_Num, Fps_Den, multi_str, Gpu)
     )
