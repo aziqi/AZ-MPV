@@ -1,4 +1,6 @@
-### https://github.com/hooke007/mpv_PlayKit/wiki/3_K7sfunc
+### SVPflow Pro 60FPS Frame Interpolation (Hardware NVOF Mode)
+### Optimized for NVIDIA GeForce RTX (Optical Flow Accelerator)
+### Docs: https://github.com/hooke007/mpv_PlayKit/wiki/3_K7sfunc
 
 import vapoursynth as vs
 from vapoursynth import core
@@ -7,13 +9,14 @@ import k7sfunc as k7f
 clip = video_in
 
 ############
+# User Options #
 ############
 
 H_Pre = 1440
 Fps_Num = 60000
 Fps_Den = 1001
 Abs = True
-Nvof = False
+Nvof = True
 Gpu = 0
 Lk_Fmt = False
 
@@ -22,3 +25,4 @@ clip = k7f.FMT_CTRL(clip, h_max=H_Pre, fmt_pix=1 if Lk_Fmt else 0)
 clip = k7f.SVP_PRO(clip, fps_in=container_fps, fps_num=Fps_Num, fps_den=Fps_Den, abs=Abs, nvof=Nvof, gpu=Gpu)
 
 clip.set_output()
+
