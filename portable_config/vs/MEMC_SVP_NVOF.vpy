@@ -20,7 +20,7 @@ Abs         = True       # True = Absolute target FPS, False = Multiplier (e.g. 
 Gpu         = 0          # Primary discrete GPU index
 Lk_Fmt      = False      # Lock pixel format to YUV420P8
 Crop_Border = True       # Add sacrificial black borders before NVOF then crop to preserve 100% video content
-Pad         = 4          # Sacrificial padding width in pixels
+Pad         = 16         # Sacrificial padding width in pixels (16px eliminates full watermark block + chroma bleed)
 
 clip = k7f.FPS_CTRL(clip, fps_in=container_fps, fps_ret=True)
 clip = k7f.FMT_CTRL(clip, h_max=H_Pre, fmt_pix=1 if Lk_Fmt else 0)
