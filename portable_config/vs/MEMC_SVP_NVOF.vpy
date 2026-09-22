@@ -19,7 +19,8 @@ Fps_Den     = 1
 Abs         = True       # True = Absolute target FPS, False = Multiplier (e.g. 2x)
 Gpu         = 0          # Primary discrete GPU index
 Lk_Fmt      = False      # Lock pixel format to YUV420P8
-Crop_Border = True       # Crop 4px perimeter to permanently eliminate watermark line
+Crop_Border = True       # Add sacrificial black borders before NVOF then crop to preserve 100% video content
+Pad         = 4          # Sacrificial padding width in pixels
 
 clip = k7f.FPS_CTRL(clip, fps_in=container_fps, fps_ret=True)
 clip = k7f.FMT_CTRL(clip, h_max=H_Pre, fmt_pix=1 if Lk_Fmt else 0)
@@ -35,14 +36,14 @@ smooth_nvof_param = (
     % (Fps_Num, Fps_Den, multi_str, Gpu)
 )
 
-orig_w = clip.width
-orig_h = clip.height
+if Crop_Border:
+    clip = core.std.AddBorders(clip, left=Pad, right=Pad, top=Pad, bottom=Pad)
+    clip8 = core.std.AddBorders(clip8, left=Pad, right=Pad, top=Pad, bottom=Pad)
 
 clip = core.svp2.SmoothFps_NVOF(clip, smooth_nvof_param, nvof_src=clip8, src=clip, fps=container_fps)
 clip = core.std.AssumeFPS(clip, fpsnum=clip.fps_num, fpsden=clip.fps_den)
 
 if Crop_Border:
-    clip = core.std.Crop(clip, left=4, right=4, top=4, bottom=4)
-    clip = core.resize.Bicubic(clip, width=orig_w, height=orig_h)
+    clip = core.std.Crop(clip, left=Pad, right=Pad, top=Pad, bottom=Pad)
 
 clip.set_output()
